@@ -20,6 +20,9 @@ DESCRIPTION
     `Type::Tiny::XS::get_subname_for($type)`
         Like `get_coderef_for` but returns the name of such a sub as a string.
 
+    `Type::Tiny::XS::is_known($coderef)`
+        Returns true if the coderef was provided by Type::Tiny::XS.
+
 BUGS
     Please report any bugs to
     <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny-XS>.
