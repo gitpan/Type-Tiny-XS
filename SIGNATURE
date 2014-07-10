@@ -1,0 +1,47 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.73.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 33317486c4fa2cf7fec85bf92ed38ac0f64233a0 CONTRIBUTING
+SHA1 da5ac28568bbcf26cbf87ffe0198ba3cad487bd2 COPYRIGHT
+SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
+SHA1 af10fdbebb7b4f2dcc3c582cade7f7f4723bb65d Changes
+SHA1 c6ba0e141d83810a36e8d60c5e200e3cf55e09f1 INSTALL
+SHA1 34f5e12514b91055de4b164a1f2327ef5c30ba53 LICENSE
+SHA1 e9fbf602737937a16b33b4c877f7adf794b30c3f MANIFEST
+SHA1 39ccceaa7417e931f6b05ceb184edd1108fe1b89 META.json
+SHA1 c977380aead92b87101c9715c062e47f141c5b6b META.yml
+SHA1 08b1266374986c9b7f20fd1ad981a16aa964d343 Makefile.PL
+SHA1 7dbec48cfb73fa072d2d850526c04a599441f440 README
+SHA1 e4074458cfbb76a63f513a8c6ed2114db0392837 Util.xs
+SHA1 a8a423c9135677cab7e083786a3fe5a2d0d4c364 XS.xs
+SHA1 02dcc1a9d27b1e752da56dfddcc493265de5257e dist.ini
+SHA1 5652ab24be28775bc82a2e4819c1861520ec5a4c doap.ttl
+SHA1 da08522868c6aee973f264755c49df4e8fee45e1 fallback/const-c.inc
+SHA1 aa632befa3b4feada95851f4c974ce5dcfdb9983 fallback/const-xs.inc
+SHA1 5500ab8f3b31006c63b3c13f8477adbcfe2d7885 lib/Type/Tiny/XS.pm
+SHA1 9f5e2370cc1669b5283e57dc6fe4fd97c8db7d91 lib/Type/Tiny/XS/Util.pm
+SHA1 e47c5d1952f8ea23ef8be37dfcc448e308e08b24 ppport.h
+SHA1 f1e08452a12291c3f5fd5994567d98d40e6016c6 t/01basic.t
+SHA1 901f863cc645327cc1fb9118d891b98e571ad61e typetiny.h
+SHA1 75915923439d7ba55bceca3d3c4513d3d1955b9e xs_version.h
+SHA1 9a4553967c29e58307745f32a267df38af4fad42 xshelper.h
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlO+qi0ACgkQzr+BKGoqfTkQ1gCdEzvpse3vS/jFcWQchSZNRRyz
+2jMAn0GEqGr0XCZ439bW50n8UpikuCgE
+=pZJ/
+-----END PGP SIGNATURE-----
