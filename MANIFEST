@@ -20,6 +20,7 @@ lib/Type/Tiny/XS.pm
 lib/Type/Tiny/XS/Util.pm
 ppport.h
 t/01basic.t
+t/02int.t
 typetiny.h
 xs_version.h
 xshelper.h
