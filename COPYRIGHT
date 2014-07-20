@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Type-Tiny-XS
-Upstream-Contact: Toby Inkster (TOBYINK) <tobyink@cpan.org>
+Upstream-Contact:  and Toby Inkster (TOBYINK) <tobyink@cpan.org>
 Source: https://metacpan.org/release/Type-Tiny-XS
 
 Files: CONTRIBUTING
@@ -23,6 +23,9 @@ Files: README
  lib/Type/Tiny/XS/Util.pm
  t/01basic.t
  t/02int.t
+ t/03positiveint.t
+ t/04positiveorzeroint.t
+ t/05nonemptystr.t
 Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 

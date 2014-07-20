@@ -2,6 +2,7 @@
 abstract: "provides an XS boost for some of Type::Tiny's built-in type constraints"
 author:
   - 'Toby Inkster (TOBYINK) <tobyink@cpan.org>'
+  - unknown
 build_requires:
   Test::More: '0.92'
 configure_requires:
@@ -25,10 +26,10 @@ optional_features: {}
 provides:
   Type::Tiny::XS:
     file: lib/Type/Tiny/XS.pm
-    version: '0.004'
+    version: '0.005'
   Type::Tiny::XS::Util:
     file: lib/Type/Tiny/XS/Util.pm
-    version: '0.004'
+    version: '0.005'
 requires:
   perl: '5.010001'
 resources:
@@ -37,4 +38,4 @@ resources:
   homepage: https://metacpan.org/release/Type-Tiny-XS
   license: http://dev.perl.org/licenses/
   repository: git://github.com/tobyink/p5-type-tiny-xs.git
-version: '0.004'
+version: '0.005'

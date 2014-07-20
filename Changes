@@ -6,6 +6,19 @@ Home page:    <https://metacpan.org/release/Type-Tiny-XS>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny-XS>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.005	2014-07-19
+
+ [ Documentation ]
+ - Document that Type::Tiny::XS is now being used by Type::Tiny.
+
+ [ Other ]
+ - Added: NonEmptyStr (which will be used by a future release of
+   Types::Common::String).
+ - Added: PositiveInt (which will be used by a future release of
+   Types::Common::Numeric).
+ - Added: PositiveOrZeroInt (which will be used by a future release of
+   Types::Common::Numeric).
+
 0.004	2014-07-11
 
  [ Documentation ]

@@ -21,6 +21,9 @@ lib/Type/Tiny/XS/Util.pm
 ppport.h
 t/01basic.t
 t/02int.t
+t/03positiveint.t
+t/04positiveorzeroint.t
+t/05nonemptystr.t
 typetiny.h
 xs_version.h
 xshelper.h

@@ -1,7 +1,8 @@
 {
    "abstract" : "provides an XS boost for some of Type::Tiny's built-in type constraints",
    "author" : [
-      "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
+      "Toby Inkster (TOBYINK) <tobyink@cpan.org>",
+      ""
    ],
    "dynamic_config" : 1,
    "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
@@ -44,11 +45,11 @@
    "provides" : {
       "Type::Tiny::XS" : {
          "file" : "lib/Type/Tiny/XS.pm",
-         "version" : "0.004"
+         "version" : "0.005"
       },
       "Type::Tiny::XS::Util" : {
          "file" : "lib/Type/Tiny/XS/Util.pm",
-         "version" : "0.004"
+         "version" : "0.005"
       }
    },
    "release_status" : "stable",
@@ -67,5 +68,5 @@
          "web" : "https://github.com/tobyink/p5-type-tiny-xs"
       }
    },
-   "version" : "0.004"
+   "version" : "0.005"
 }
