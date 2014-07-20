@@ -26,6 +26,7 @@ t/04positiveorzeroint.t
 t/05nonemptystr.t
 t/06map.t
 t/07tuple.t
+t/08enum.t
 t/99parsing.t
 typetiny.h
 xs_version.h

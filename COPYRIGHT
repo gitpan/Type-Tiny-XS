@@ -28,6 +28,7 @@ Files: README
  t/05nonemptystr.t
  t/06map.t
  t/07tuple.t
+ t/08enum.t
  t/99parsing.t
 Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
