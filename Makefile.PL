@@ -18,12 +18,15 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        runtime => { requires => { perl => 5.010001 } },
+                        runtime => {
+                          requires => { perl => 5.010001 },
+                          suggests => { "Type::Parser" => 0 },
+                        },
                         test => { requires => { "Test::More" => 0.92 } },
                       },
   "provides"       => {
-                        "Type::Tiny::XS"       => { file => "lib/Type/Tiny/XS.pm", version => 0.005 },
-                        "Type::Tiny::XS::Util" => { file => "lib/Type/Tiny/XS/Util.pm", version => 0.005 },
+                        "Type::Tiny::XS"       => { file => "lib/Type/Tiny/XS.pm", version => 0.006 },
+                        "Type::Tiny::XS::Util" => { file => "lib/Type/Tiny/XS/Util.pm", version => 0.006 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -39,7 +42,7 @@ my $meta = {
                                         },
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/project",
                       },
-  "version"        => 0.005,
+  "version"        => 0.006,
 };
 
 my %dynamic_config;

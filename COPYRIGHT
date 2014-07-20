@@ -26,6 +26,9 @@ Files: README
  t/03positiveint.t
  t/04positiveorzeroint.t
  t/05nonemptystr.t
+ t/06map.t
+ t/07tuple.t
+ t/99parsing.t
 Copyright: This software is copyright (c) 2014 by Toby Inkster.
 License: GPL-1.0+ or Artistic-1.0
 

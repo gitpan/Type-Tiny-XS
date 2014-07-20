@@ -24,6 +24,9 @@ t/02int.t
 t/03positiveint.t
 t/04positiveorzeroint.t
 t/05nonemptystr.t
+t/06map.t
+t/07tuple.t
+t/99parsing.t
 typetiny.h
 xs_version.h
 xshelper.h
