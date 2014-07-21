@@ -24,7 +24,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Type-Tiny-XS";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-007>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-007>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-008>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-type-tiny-xs>;
@@ -147,6 +147,23 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-XS-0.007.tar.gz>;
 	doap:revision        "0.007"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-008>
+	a                    doap:Version;
+	dc:identifier        "Type-Tiny-XS-0.008"^^xsd:string;
+	dc:issued            "2014-07-21"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Addition;
+			rdfs:label "AnyOf (which will be used by a future release of Type::Tiny::Union).";
+		], [
+			a doap-changeset:Addition;
+			rdfs:label "AllOf (which will be used by a future release of Type::Tiny::Intersection).";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-XS-0.008.tar.gz>;
+	doap:revision        "0.008"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/tobyink>
 	a                    foaf:Person;
