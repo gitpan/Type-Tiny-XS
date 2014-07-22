@@ -187,6 +187,7 @@ typetiny_tc_Int(pTHX_ SV* const data PERL_UNUSED_DECL, SV* const sv) {
 
 int
 typetiny_tc_PositiveInt(pTHX_ SV* const data PERL_UNUSED_DECL, SV* const sv) {
+    int i;
     assert(sv);
     if ((!SvOK(sv)) || SvROK(sv) || isGV(sv)) {
         return FALSE;
@@ -205,12 +206,13 @@ typetiny_tc_PositiveInt(pTHX_ SV* const data PERL_UNUSED_DECL, SV* const sv) {
         }
     }
     
-    int i = SvIVx(sv);
+    i = SvIVx(sv);
     return ((i > 0) ? TRUE : FALSE);
 }
 
 int
 typetiny_tc_PositiveOrZeroInt(pTHX_ SV* const data PERL_UNUSED_DECL, SV* const sv) {
+    int i;
     assert(sv);
     if ((!SvOK(sv)) || SvROK(sv) || isGV(sv)) {
         return FALSE;
@@ -229,7 +231,7 @@ typetiny_tc_PositiveOrZeroInt(pTHX_ SV* const data PERL_UNUSED_DECL, SV* const s
         }
     }
     
-    int i = SvIVx(sv);
+    i = SvIVx(sv);
     return ((i >= 0) ? TRUE : FALSE);
 }
 
@@ -410,8 +412,9 @@ typetiny_parameterized_Map(pTHX_ SV* const param, SV* const sv) {
 
 static int
 typetiny_parameterized_Tuple(pTHX_ SV* const param, SV* const sv) {
+    I32 i;
     if(IsArrayRef(sv)){
-        AV* const av      = (AV*)SvRV(sv);
+        AV* const av  = (AV*)SvRV(sv);
         I32 const len = av_len(av) + 1;
 
         AV* const params  = (AV*)SvRV(param);
@@ -419,7 +422,6 @@ typetiny_parameterized_Tuple(pTHX_ SV* const param, SV* const sv) {
             return FALSE;
         }
 
-        I32 i;
         for(i = 0; i < len; i++){
             SV* const check = *av_fetch(params, i, TRUE);
             SV* const value = *av_fetch(av, i, TRUE);
@@ -434,14 +436,17 @@ typetiny_parameterized_Tuple(pTHX_ SV* const param, SV* const sv) {
 
 static int
 typetiny_parameterized_Enum(pTHX_ SV* const param, SV* const sv) {
+    AV* av;
+    I32 len;
+    I32 i;
+    
     assert(sv);
     if(!(SvOK(sv) && !SvROK(sv) && !isGV(sv))) {
         return FALSE;
     }
 
-    AV* const av  = (AV*)SvRV(param);
-    I32 const len = av_len(av) + 1;
-    I32 i;
+    av  = (AV*)SvRV(param);
+    len = av_len(av) + 1;
     for(i = 0; i < len; i++){
         SV* const x = *av_fetch(av, i, TRUE);
         if(sv_eq(sv, x)){
@@ -756,9 +761,8 @@ VERSIONCHECK: DISABLE
 
 BOOT:
 {
-    boot_Type__Tiny__XS__Util(aTHX_ cv);
-    
     MY_CXT_INIT;
+    boot_Type__Tiny__XS__Util(aTHX_ cv);
     setup_my_cxt(aTHX_ aMY_CXT);
     
     /* setup built-in type constraints */

@@ -6,6 +6,14 @@ Home page:    <https://metacpan.org/release/Type-Tiny-XS>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny-XS>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.009	2014-07-22
+
+ [ Bug Fixes ]
+ - Move variable declarations to the beginning of blocks, for better C90
+   compliance. Should compile now in MSVC.
+   Jason R Mash++
+   <https://gist.github.com/jrmash/42e9e36606fb6e61597a>
+
 0.008	2014-07-21
 
  - Added: AllOf (which will be used by a future release of

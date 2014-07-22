@@ -48,11 +48,11 @@
    "provides" : {
       "Type::Tiny::XS" : {
          "file" : "lib/Type/Tiny/XS.pm",
-         "version" : "0.008"
+         "version" : "0.009"
       },
       "Type::Tiny::XS::Util" : {
          "file" : "lib/Type/Tiny/XS/Util.pm",
-         "version" : "0.008"
+         "version" : "0.009"
       }
    },
    "release_status" : "stable",
@@ -71,5 +71,5 @@
          "web" : "https://github.com/tobyink/p5-type-tiny-xs"
       }
    },
-   "version" : "0.008"
+   "version" : "0.009"
 }
