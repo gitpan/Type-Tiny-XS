@@ -6,7 +6,7 @@ use XSLoader ();
 package Type::Tiny::XS;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.009';
+our $VERSION   = '0.010';
 
 __PACKAGE__->XSLoader::load($VERSION);
 
@@ -75,7 +75,7 @@ sub get_coderef_for {
 	
 	elsif ($type =~ /^(AnyOf|AllOf|Tuple)\[(.+)\]$/) {
 		my $base = $1;
-		my @children = 
+		my @children =
 			map scalar(get_coderef_for($_)),
 			(eval { require Type::Parser })
 				? _parse_parameters($type)

@@ -6,6 +6,16 @@ Home page:    <https://metacpan.org/release/Type-Tiny-XS>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny-XS>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.010	2014-07-22
+
+ [ Bug Fixes ]
+ - Type constraint subs can now be called with no parameters and will
+   pretend that you passed them undef. This makes them behave more like
+   Type::Tiny's PP implementation, where there are no argument count
+   checks.
+   Jed Lund++
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/1>
+
 0.009	2014-07-22
 
  [ Bug Fixes ]
@@ -13,6 +23,7 @@ Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
    compliance. Should compile now in MSVC.
    Jason R Mash++
    <https://gist.github.com/jrmash/42e9e36606fb6e61597a>
+   <https://github.com/tobyink/p5-type-tiny-xs/issues/2>
 
 0.008	2014-07-21
 

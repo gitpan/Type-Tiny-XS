@@ -24,7 +24,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "Type-Tiny-XS";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-007>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-008>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-009>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-001>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-002>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-003>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-004>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-005>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-006>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-007>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-008>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-009>, <http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-010>;
 	doap:repository      [
 		a doap:GitRepository;
 		doap:browse <https://github.com/tobyink/p5-type-tiny-xs>;
@@ -175,12 +175,35 @@
 			rdfs:label "Move variable declarations to the beginning of blocks, for better C90 compliance. Should compile now in MSVC.";
 			doap-changeset:fixes <tdb:2014:https://github.com/tobyink/p5-type-tiny-xs/issues/2>;
 			doap-changeset:thanks <http://purl.org/NET/cpan-uri/person/jrmash>;
-			rdfs:seeAlso <https://gist.github.com/jrmash/42e9e36606fb6e61597a>;
+			rdfs:seeAlso <https://gist.github.com/jrmash/42e9e36606fb6e61597a>, <https://github.com/tobyink/p5-type-tiny-xs/issues/2>;
 		];
 	];
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-XS-0.009.tar.gz>;
 	doap:revision        "0.009"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/v_0-010>
+	a                    doap:Version;
+	dc:identifier        "Type-Tiny-XS-0.010"^^xsd:string;
+	dc:issued            "2014-07-22"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Bugfix;
+			rdfs:label "Type constraint subs can now be called with no parameters and will pretend that you passed them undef. This makes them behave more like Type::Tiny's PP implementation, where there are no argument count checks.";
+			doap-changeset:fixes <tdb:2014:https://github.com/tobyink/p5-type-tiny-xs/issues/1>;
+			doap-changeset:thanks <http://purl.org/NET/cpan-uri/person/jandrew>;
+			rdfs:seeAlso <https://github.com/tobyink/p5-type-tiny-xs/issues/1>;
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/Type-Tiny-XS-0.010.tar.gz>;
+	doap:revision        "0.010"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/person/jandrew>
+	a                    foaf:Person;
+	foaf:name            "Jed Lund";
+	foaf:nick            "JANDREW";
+	foaf:page            <https://metacpan.org/author/JANDREW>.
 
 <http://purl.org/NET/cpan-uri/person/jrmash>
 	a                    foaf:Person;
