@@ -6,6 +6,14 @@ Home page:    <https://metacpan.org/release/Type-Tiny-XS>
 Bug tracker:  <http://rt.cpan.org/Dist/Display.html?Queue=Type-Tiny-XS>
 Maintainer:   Toby Inkster (TOBYINK) <tobyink@cpan.org>
 
+0.011	2014-09-07
+
+ [ Bug Fixes ]
+ - Fix for PositiveInt/PositiveOrZeroInt.
+   Fixes RT#98631.
+   Steven Lee++
+   <https://rt.cpan.org/Ticket/Display.html?id=98631>
+
 0.010	2014-07-22
 
  [ Bug Fixes ]
