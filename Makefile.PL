@@ -5,9 +5,9 @@ my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 
 my $meta = {
   "abstract"       => "provides an XS boost for some of Type::Tiny's built-in type constraints",
-  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>", "unknown"],
+  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 1,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -25,8 +25,8 @@ my $meta = {
                         test => { requires => { "Test::More" => 0.92 } },
                       },
   "provides"       => {
-                        "Type::Tiny::XS"       => { file => "lib/Type/Tiny/XS.pm", version => 0.011 },
-                        "Type::Tiny::XS::Util" => { file => "lib/Type/Tiny/XS/Util.pm", version => 0.011 },
+                        "Type::Tiny::XS"       => { file => "lib/Type/Tiny/XS.pm", version => 0.012 },
+                        "Type::Tiny::XS::Util" => { file => "lib/Type/Tiny/XS/Util.pm", version => 0.012 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -40,9 +40,9 @@ my $meta = {
                                           url  => "git://github.com/tobyink/p5-type-tiny-xs.git",
                                           web  => "https://github.com/tobyink/p5-type-tiny-xs",
                                         },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Type-Tiny-XS/project",
                       },
-  "version"        => 0.011,
+  "version"        => 0.012,
 };
 
 my %dynamic_config;
